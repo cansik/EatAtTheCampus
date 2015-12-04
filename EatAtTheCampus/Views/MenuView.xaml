@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="EatAtTheCampus.MenuView">
+	<ContentView.Content>
+		<StackLayout Padding="10">
+			<Label Text="{Binding MenuType}" />
+			<Label Text="{Binding Name}" />
+			<BoxView Color="Gray" WidthRequest="100" HeightRequest="2" />
+		</StackLayout>
+	</ContentView.Content>
+</ContentView>

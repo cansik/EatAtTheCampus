@@ -4,6 +4,11 @@
 		<AbsoluteLayout>
 			<!-- background image -->
 			<Image Source="{local:ImageResource EatAtTheCampus.Resources.background.jpg}" Aspect="AspectFill" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" />
+			<ScrollView>
+				<StackLayout x:Name="resultLayout" Padding="10">
+					<ActivityIndicator x:Name="activityIndicator" Color="Gray" IsRunning="true" />
+				</StackLayout>
+			</ScrollView>
 		</AbsoluteLayout>
 	</ContentPage.Content>
 </ContentPage>

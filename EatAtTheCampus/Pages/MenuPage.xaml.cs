@@ -34,7 +34,19 @@ namespace EatAtTheCampus
 		async void LoadMenu ()
 		{
 			var data = await client.LoadMenuPlan (location);
-			Debug.WriteLine ("Loaded");
+
+			if (data.Count == 0) {
+				resultLayout.Children.Add (new Label{ Text = "No menu today!" });
+				activityIndicator.IsRunning = false;
+				return;
+			}
+
+			var today = data [0];
+
+			foreach (var menu in today.Menus)
+				resultLayout.Children.Add (new MenuView (menu));
+
+			activityIndicator.IsRunning = false;
 		}
 	}
 }
