@@ -2,9 +2,8 @@
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="EatAtTheCampus.MenuView">
 	<ContentView.Content>
 		<StackLayout Padding="10">
-			<Label Text="{Binding MenuType}" />
-			<Label Text="{Binding Name}" />
-			<BoxView Color="Gray" WidthRequest="100" HeightRequest="2" />
+			<Label Text="{Binding MenuType}" FontSize="14" HorizontalTextAlignment="Center" />
+			<Label Text="{Binding Name}" FontSize="20" HorizontalTextAlignment="Center" />
 		</StackLayout>
 	</ContentView.Content>
 </ContentView>

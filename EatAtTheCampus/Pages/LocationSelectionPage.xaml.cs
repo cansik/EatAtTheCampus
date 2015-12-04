@@ -21,8 +21,9 @@ namespace EatAtTheCampus
 			Debug.WriteLine ("Default Location: " + location);
 
 			if (location != String.Empty) {
-				var l = SVGLocation.Locations.Single (e => e.Id == location);
-				Navigation.PushAsync (new MenuPage (l));
+				var l = SVGLocation.Locations.SingleOrDefault (e => e.Id == location);
+				if (l != null)
+					Navigation.PushAsync (new MenuPage (l));
 			}
 		}
 

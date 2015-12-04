@@ -43,8 +43,14 @@ namespace EatAtTheCampus
 
 			var today = data [0];
 
-			foreach (var menu in today.Menus)
+			foreach (var menu in today.Menus) {
 				resultLayout.Children.Add (new MenuView (menu));
+				resultLayout.Children.Add (new BoxView{ WidthRequest = 50, HeightRequest = 1, Color = Color.FromHex ("#334D5C") });
+			}
+
+			//todo: remove this ugly thing!
+			//remove last spacer
+			resultLayout.Children.RemoveAt (resultLayout.Children.Count - 1);
 
 			activityIndicator.IsRunning = false;
 		}

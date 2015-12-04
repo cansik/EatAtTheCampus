@@ -14,8 +14,8 @@ namespace SVGroupWrapper
 				Name = "FHNW Windisch"
 			},
 			new SVGLocation {
-				Id = "5967",
-				Name = "Culinarium Zurich"
+				Id = "1050",
+				Name = "Flughafen Restaurant A"
 			}
 		};
 	}
