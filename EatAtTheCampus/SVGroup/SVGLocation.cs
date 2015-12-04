@@ -2,11 +2,22 @@
 
 namespace SVGroupWrapper
 {
-	[Flags]
-	public enum SVGLocation
+	public class SVGLocation
 	{
-		FHNWWindisch = 7824,
-		CulinariumZurich = 5967
+		public String Name { get; set; }
+
+		public String Id { get; set; }
+
+		public static readonly SVGLocation[] Locations = { 
+			new SVGLocation {
+				Id = "7824",
+				Name = "FHNW Windisch"
+			},
+			new SVGLocation {
+				Id = "5967",
+				Name = "Culinarium Zurich"
+			}
+		};
 	}
 }
 

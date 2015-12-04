@@ -22,7 +22,7 @@ namespace EatAtTheCampus
 		public MenuPage (SVGLocation location) : this ()
 		{
 			this.location = location;
-			Title = ((SVGLocation)location).ToString ();
+			Title = location.Name;
 		}
 
 		protected override void OnAppearing ()

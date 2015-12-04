@@ -11,16 +11,33 @@ namespace EatAtTheCampus
 		public LocationSelectionPage ()
 		{
 			InitializeComponent ();
-
 			NavigationPage.SetHasNavigationBar (this, false);
+			LoadLocations ();
+		}
+
+		void LoadLocations ()
+		{
+			//todo: replace this with a nice solution!
+			foreach (var location in SVGLocation.Locations) {
+				var btn = new Button ();
+
+				//set attributes
+				btn.Text = location.Name;
+				btn.CommandParameter = location;
+				btn.Clicked += OnCampusButtonClicked;
+
+				//styling
+				btn.HorizontalOptions = LayoutOptions.Fill;
+				btn.BorderRadius = 0;
+
+				locationLayout.Children.Add (btn);
+			}
 		}
 
 		void OnCampusButtonClicked (object sender, EventArgs args)
 		{
 			var btn = sender as Button;
-
-			//todo: get location by tag
-			var location = (SVGLocation)Enum.Parse (typeof(SVGLocation), btn.Text.Replace (" ", ""));
+			var location = btn.CommandParameter as SVGLocation;
 
 			Navigation.PushAsync (new MenuPage (location));
 		}

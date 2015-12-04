@@ -23,7 +23,7 @@ namespace SVGroupWrapper
 		public async Task<List<SVGDay>> LoadMenuPlan (SVGLocation location)
 		{
 			var result = _webClient.PostStringAsync (SVGUtil.ServiceUrl, 
-				             String.Concat ("action=getMenuplan&params%5Bbranchidentifier%5D=", (int)location));
+				             String.Concat ("action=getMenuplan&params%5Bbranchidentifier%5D=", location.Id));
 
 			var stringResult = await result;
 			return _parser.ParseMenus (stringResult);

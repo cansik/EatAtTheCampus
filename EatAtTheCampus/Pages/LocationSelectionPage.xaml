@@ -6,10 +6,8 @@
 			<Image Source="{local:ImageResource EatAtTheCampus.Resources.background.jpg}" Aspect="AspectFill" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" />
 			<StackLayout AbsoluteLayout.LayoutBounds="0, 0, 1, 1" Padding="20, 0, 20, 0" AbsoluteLayout.LayoutFlags="All" VerticalOptions="Fill">
 				<Label Text="Eat At The Campus" FontSize="39" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
-				<StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+				<StackLayout x:Name="locationLayout" HorizontalOptions="Center" VerticalOptions="Center">
 					<Label Text="Please choose your campus!" HorizontalOptions="Center" />
-					<Button Text="FHNW Windisch" HorizontalOptions="Fill" BorderRadius="0" Clicked="OnCampusButtonClicked" />
-					<Button Text="Culinarium Zurich" HorizontalOptions="Fill" BorderRadius="0" Clicked="OnCampusButtonClicked" />
 				</StackLayout>
 				<!-- just here to put stacklayout up -->
 				<BoxView HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
