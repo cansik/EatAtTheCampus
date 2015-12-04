@@ -2,6 +2,7 @@
 <Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="EatAtTheCampus.App">
 	<Application.Resources>
 		<ResourceDictionary>
+			<!-- Style: https://color.adobe.com/Flat-design-colors-1-color-theme-3044245/edit/?copy=true&base=1&rule=Custom&selected=0&name=Copy%20of%20Flat%20design%20colors%201&mode=hsv&rgbvalues=0.199999888832,0.3019601682245372,0.360784,0.27058783795999997,0.698039,0.6156862591214024,0.937255,0.7882359903542551,0.2980395919599999,0.8862749999999999,0.4784316084130131,0.24705890527500002,0.8745100000000001,0.3529410931477695,0.28627434654000006&swatchOrder=0,1,2,3,4 -->
 			<Style TargetType="Label">
 				<Setter Property="TextColor" Value="#334D5C" />
 			</Style>

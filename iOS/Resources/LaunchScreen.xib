@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6214" systemVersion="14A314h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6207"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,11 +11,19 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="2" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="background.jpg">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2">
                     <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                    <animations/>
                 </imageView>
             </subviews>
-            <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+            <animations/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="8a1-b8-Fnc"/>
+                <constraint firstAttribute="bottom" secondItem="2" secondAttribute="bottom" id="MeX-8l-8a3"/>
+                <constraint firstAttribute="trailing" secondItem="2" secondAttribute="trailing" id="XaA-qM-UOx"/>
+                <constraint firstItem="2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="uQW-dM-Xfe"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="548" y="455"/>

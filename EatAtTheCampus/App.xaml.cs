@@ -2,15 +2,12 @@
 using System.Collections.Generic;
 
 using Xamarin.Forms;
-using SVGroupWrapper;
 using System.Diagnostics;
 
 namespace EatAtTheCampus
 {
 	public partial class App : Application
 	{
-		SVGClient client;
-
 		public App ()
 		{
 			InitializeComponent ();
@@ -20,8 +17,6 @@ namespace EatAtTheCampus
 		protected override async void OnStart ()
 		{
 			// Handle when your app starts
-			//var data = await client.LoadMenuPlan (SVGLocation.FHNWBruggWindisch);
-			Debug.WriteLine ("Loaded");
 
 		}
 
