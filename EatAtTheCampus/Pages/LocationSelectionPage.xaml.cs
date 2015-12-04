@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 using SVGroupWrapper;
+using EatAtTheCampus.Helpers;
+using System.Diagnostics;
+using System.Linq;
 
 namespace EatAtTheCampus
 {
@@ -13,6 +16,14 @@ namespace EatAtTheCampus
 			InitializeComponent ();
 			NavigationPage.SetHasNavigationBar (this, false);
 			LoadLocations ();
+
+			var location = Settings.Location;
+			Debug.WriteLine ("Default Location: " + location);
+
+			if (location != String.Empty) {
+				var l = SVGLocation.Locations.Single (e => e.Id == location);
+				Navigation.PushAsync (new MenuPage (l));
+			}
 		}
 
 		void LoadLocations ()
@@ -38,6 +49,9 @@ namespace EatAtTheCampus
 		{
 			var btn = sender as Button;
 			var location = btn.CommandParameter as SVGLocation;
+
+			//add to settings
+			Settings.Location = location.Id;
 
 			Navigation.PushAsync (new MenuPage (location));
 		}
