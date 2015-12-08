@@ -2,11 +2,11 @@
 Campus Meal is an app which presents the daily menu at the campus.
 
 ### Idea
-The mensa operator [SV Group][1] publishes their weekly menu plan over a mobile optimized webpage. Sadly this webpage requiers a lot of clicks to get to todays menu. So you never check the menu on the mobile phone.
+The mensa operator [SV Group][1] publishes their weekly menu plan over a mobile optimized webpage. Sadly this webpage requiers a lot of clicks to get to today's menu. So you never have the time to check the menu on your mobile phone.
 
-Another problem is that a lot of technology affine people, which never cook themselfs, do not know what some of the menus mean. Or would you know what *[Pa sa lao lao][2]* is?
+Another problem is that a lot of technology affine people, which never cook themselves, do not know what some of the menus mean. Or would you know what *[Pa sa lao lao][2]* is?
 
-So I started developing an app which show me the daily menu with one click (just start the app) and would tell me what the strange name of the menu's mean.
+So we started developing an app which shows us the daily menu and would tell us what the strange name of the menu's mean.
 
 Take a look at the [screenshots](#Screenshots) and [download](#Download) the app!
 
@@ -24,9 +24,9 @@ Download the app from the app store of your choice!
 * First Release
 	* The basic iOS and Android app.
 	* Choose your campus.
-	* Take a look at todays menu.
+	* Take a look at today's menu.
 * Second Release
-	* More campus (Maybe the ETH).
+	* More campus (maybe the ETH).
 	* A backend for the app to make it more stable.
 	* Maybe a Windows Phone app?
 
@@ -44,7 +44,7 @@ We implemented the app with [Xamarin Forms][3], a cross platform framework for A
 At the moment we just parse the menus with regex from the webpage but later we would like to have a backend which stores the daily menu in a database. This would make the app more stable and better maintainable.
 
 ### About
-In 2014 the first ideas about this project came up and some protoypes we're created. But until now we really started to program the app with the project name **Eat at the Campus**.
+In 2014 the first ideas about this project came up and some protoypes were created. Until now we started to program the app with the project name **Eat at the Campus**.
 
 Before the realease of the first prototype we started to think about a better name for the app which resulted in **Campus Meal**.
 
@@ -52,6 +52,10 @@ The app is currently maintained by Florian, a computer-science student of the [F
 A lot of thanks goes to Sara, Markus & Andreas for their support.
 
 *Switzerland 2015*
+
+*Disclaimer: This project or the involed people are not releated to the SV Group AG. The app just presents the content of the menu plan of the SV Group AG in simple way.*
+
+*Information provided without guarantee.*
 
 [1]: http://www.sv-group.ch/de/ "SV Group"
 [2]: https://asiastreetfood.com/rezepte/fisch-curry-mit-lao-whiskey/ "Pa sa lao lao"
