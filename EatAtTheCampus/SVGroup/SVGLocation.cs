@@ -14,9 +14,13 @@ namespace SVGroupWrapper
 				Name = "FHNW Windisch"
 			},
 			new SVGLocation {
-				Id = "1050",
-				Name = "Flughafen Restaurant A"
-			}
+				Id = "7560",
+				Name = "FHNW Muttenz"
+			},
+			new SVGLocation {
+				Id = "7090",
+				Name = "Universität Basel"
+			},
 		};
 	}
 }

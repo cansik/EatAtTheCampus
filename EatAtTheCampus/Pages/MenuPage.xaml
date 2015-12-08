@@ -3,8 +3,8 @@
 	<ContentPage.Content>
 		<AbsoluteLayout>
 			<!-- background image -->
-			<Image Source="{local:ImageResource EatAtTheCampus.Resources.background.jpg}" Aspect="AspectFill" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" />
-			<ScrollView AbsoluteLayout.LayoutBounds="0, 0, 1, 1" Padding="20, 0, 20, 0" AbsoluteLayout.LayoutFlags="All" VerticalOptions="FillAndExpand">
+			<Image Source="{local:ImageResource EatAtTheCampus.Resources.background_light.jpg}" Aspect="AspectFill" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" />
+			<ScrollView AbsoluteLayout.LayoutBounds="0, 0, 1, 0.9" Padding="20, 0, 20, 0" AbsoluteLayout.LayoutFlags="All" VerticalOptions="Fill">
 				<StackLayout x:Name="resultLayout" Padding="10">
 					<ActivityIndicator x:Name="activityIndicator" Color="Gray" IsRunning="true" />
 				</StackLayout>

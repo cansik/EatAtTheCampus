@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="EatAtTheCampus.AboutPage" xmlns:local="clr-namespace:EatAtTheCampus;assembly=EatAtTheCampus">
+	<ContentPage.Content>
+		<AbsoluteLayout>
+			<!-- background image -->
+			<Image Source="{local:ImageResource EatAtTheCampus.Resources.background.jpg}" Aspect="AspectFill" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" />
+			<StackLayout AbsoluteLayout.LayoutBounds="0, 0, 1, 1" Padding="20, 0, 20, 0" AbsoluteLayout.LayoutFlags="All" VerticalOptions="Fill">
+				<Label Text="Eat At The Campus" FontSize="39" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+				<StackLayout x:Name="locationLayout" HorizontalOptions="Center" VerticalOptions="Center">
+					<Label Text="Developed by Florian Bruggisser" HorizontalOptions="Center" />
+					<Label Text="2015" HorizontalOptions="Center" />
+					<Label Text="Disclaimer:" HorizontalOptions="Center" />
+					<Label Text="Die App steht in keinem offiziellen Zusammenhang mit der SV Group AG. Es wird lediglich das Menu der SV Group AG aufbereitet dargestellt. Alle Angaben sind ohne Gewähr." HorizontalOptions="Center" />
+				</StackLayout>
+				<!-- just here to put stacklayout up -->
+				<BoxView HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+				</BoxView>
+			</StackLayout>
+		</AbsoluteLayout>
+	</ContentPage.Content>
+</ContentPage>

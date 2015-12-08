@@ -16,6 +16,8 @@ namespace EatAtTheCampus
 		public MenuPage ()
 		{
 			InitializeComponent ();
+
+			NavigationPage.SetBackButtonTitle (this, "Campus");
 			client = new SVGClient ();
 		}
 
@@ -42,6 +44,16 @@ namespace EatAtTheCampus
 			}
 
 			var today = data [0];
+
+			//add title
+			/*
+			resultLayout.Children.Add (new Label {
+				Text = today.WeekdayName,
+				FontSize = 24,
+				HorizontalTextAlignment = TextAlignment.Center
+			});
+			resultLayout.Children.Add (new BoxView{ WidthRequest = 50, HeightRequest = 1, Color = Color.FromHex ("#334D5C") });
+			*/
 
 			foreach (var menu in today.Menus) {
 				resultLayout.Children.Add (new MenuView (menu));

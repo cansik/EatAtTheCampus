@@ -16,23 +16,9 @@ namespace EatAtTheCampus
 			InitializeComponent ();
 
 			MainPage = new NavigationPage (new LocationSelectionPage ());
-
-			//check if default location is already set
-			/*
-			var location = Settings.Location;
-			Debug.WriteLine ("Default Location: " + location);
-
-			if (location == String.Empty)
-				MainPage = new NavigationPage (new LocationSelectionPage ());
-			else {
-
-				var l = SVGLocation.Locations.Single (e => e.Id == location);
-				MainPage = new NavigationPage (new MenuPage (l));	
-			}
-			*/
 		}
 
-		protected override async void OnStart ()
+		protected override void OnStart ()
 		{
 			// Handle when your app starts
 		}

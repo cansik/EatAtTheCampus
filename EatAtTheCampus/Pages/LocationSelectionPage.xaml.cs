@@ -23,7 +23,7 @@ namespace EatAtTheCampus
 			if (location != String.Empty) {
 				var l = SVGLocation.Locations.SingleOrDefault (e => e.Id == location);
 				if (l != null)
-					Navigation.PushAsync (new MenuPage (l));
+					Navigation.PushAsync (new MenuPage (l), true);
 			}
 		}
 
