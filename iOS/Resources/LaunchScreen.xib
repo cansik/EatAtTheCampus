@@ -31,5 +31,7 @@
     </objects>
     <resources>
         <image name="background.jpg" width="2048" height="1536"/>
+        <image name="Default.png" width="320" height="480"/>
+        <image name="Default-568h.png" width="320" height="568"/>
     </resources>
 </document>

@@ -35,6 +35,8 @@ If you would like to share your ideas, designs or code with us, just create a [n
 
 We currently need:
 
+![Current Logo's](images/drafts/joined_icons.jpeg)
+
 * A new app-logo!
 * Someone who thinks about a better user experience!
 
