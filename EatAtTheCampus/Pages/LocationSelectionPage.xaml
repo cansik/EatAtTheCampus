@@ -1,11 +1,11 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="EatAtTheCampus.LocationSelectionPage" xmlns:local="clr-namespace:EatAtTheCampus;assembly=EatAtTheCampus">
 	<ContentPage.Content>
 		<AbsoluteLayout>
 			<!-- background image -->
 			<Image Source="{local:ImageResource EatAtTheCampus.Resources.background.jpg}" Aspect="AspectFill" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" />
 			<StackLayout AbsoluteLayout.LayoutBounds="0, 0, 1, 1" Padding="20, 0, 20, 0" AbsoluteLayout.LayoutFlags="All" VerticalOptions="Fill">
-				<Label Text="Eat At The Campus" FontSize="39" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+				<Label Text="Campus Meal" FontSize="39" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
 				<StackLayout x:Name="locationLayout" HorizontalOptions="Center" VerticalOptions="Center">
 					<Label Text="Please choose your campus!" HorizontalOptions="Center" />
 				</StackLayout>

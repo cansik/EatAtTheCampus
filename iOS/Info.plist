@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>CFBundleIdentifier</key>
-	<string>ch.yarx.eatatthecampus</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
@@ -31,8 +29,10 @@
 	<key>XSAppIconAssets</key>
 	<string>Resources/Images.xcassets/AppIcons.appiconset</string>
 	<key>CFBundleName</key>
-	<string>EatCampus</string>
+	<string>CampusMeal</string>
 	<key>UIMainNibFile</key>
 	<string>LaunchScreen</string>
+	<key>CFBundleIdentifier</key>
+	<string>ch.bildspur.CampusMeal</string>
 </dict>
 </plist>

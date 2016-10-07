@@ -21,6 +21,10 @@ namespace SVGroupWrapper
 				Id = "7090",
 				Name = "Universität Basel"
 			},
+			new SVGLocation {
+				Id = "7700",
+				Name = "Hochschule Rapperswil"
+			},
 		};
 	}
 }
